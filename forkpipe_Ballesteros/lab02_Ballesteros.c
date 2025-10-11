@@ -12,23 +12,21 @@
 #include <string.h>
 
 int main(int argc, char *argv[]) {
-// Crea un nuevo proceso duplicando  el proceso actual 
+   //Crea un nuevo proceso dplicando el proceso actual 
     int processID = fork();
-// si se devuelve un numero positivo es el proceso padre 
+// si fork() devuelve un numero positivo es el proceso padre 
     if (processID > 0) {
         printf("\n proceso padre.... \n");
     }
-// si devuelve 0 estamos en el proceso hijo 
+// si fork () devuelve 0 estamos en el proceso hijo 
     else if (processID == 0) {
         printf("\n proceso hijo recien creado \n");
-    } 
-//si devuelve un valor negativo es que hubo un error 
+    }
+// si devuelve un valor negativo es que hubo un error 
     else {
         printf("\n llamada al sistema fork() falló\n");
     }
-    // Ambos procesos imprimen los números del 0 al 4, 
-     //por eso la salida aparece duplicada. 
-
+//Estos mensajes en pantalla son ejecutados tanto por el padre como por el hijo 
     printf("\n\n Imprimiendo ... \n");
     for (int i = 0; i < 5; i++)
         printf(" %d \n", i);
