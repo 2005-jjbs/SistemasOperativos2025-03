@@ -5,7 +5,7 @@
 * Fecha: Octubre 16 2025
 * Materia: Sistemas Operativos
 * Tema: Implementacion de Productor Consumidor a partir de pipe named
-*
+* - Cliente - 
 * **********************************************/
 
 #include <stdio.h>
@@ -45,18 +45,19 @@ int main() {
 
    while (1) {
       printf("Enter string: ");
+      // Leer entrada del usuario
       if (fgets(readbuf, sizeof(readbuf), stdin) == NULL) {
          printf("Error leyendo entrada\n");
          break;
       }
-
+      
       stringlen = strlen(readbuf);
 
       // Eliminar salto de línea si existe
       if (stringlen > 0 && readbuf[stringlen - 1] == '\n') {
          readbuf[stringlen - 1] = '\0';
       }
-
+      // Comparar con la cadena de fin
       end_process = strcmp(readbuf, end_str);
 
       if (end_process != 0) {
@@ -66,6 +67,7 @@ int main() {
             break;
          }
 
+         // Imprimir información del mensaje enviado
          printf("FIFOCLIENT: Sent string: \"%s\" and string length is %d\n",
                 readbuf, (int)strlen(readbuf));
 
@@ -77,6 +79,7 @@ int main() {
          }
 
          readbuf[read_bytes] = '\0';
+         // Imprimir la cadena recibida
          printf("FIFOCLIENT: Received string: \"%s\" and length is %d\n",
                 readbuf, (int)strlen(readbuf));
 
