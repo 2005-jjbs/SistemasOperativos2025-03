@@ -5,7 +5,7 @@
 * Fecha: Octubre 16 2025
 * Materia: Sistemas Operativos
 * Tema: Implementacion de Productor Consumidor a partir de pipe named
-*  
+*  - Servidor -
 * **********************************************/
 
 
@@ -46,27 +46,32 @@ int main() {
 
 // Bucle principal
    while (1) {
+      // Leer del FIFO
       read_bytes = read(fd, readbuf, sizeof(readbuf));
       if (read_bytes <= 0) {
          perror("Error al leer del FIFO o conexión cerrada");
          break;
       }
 
+      // Imprimir la cadena recibida
       readbuf[read_bytes] = '\0';
       printf("FIFOSERVER: Received string: \"%s\" and length is %d\n", readbuf, (int)strlen(readbuf));
 
+      // Comparar con la cadena de fin
       to_end = strcmp(readbuf, end);
 
+      // Si es 'end', cerrar y salir
       if (to_end == 0) {
          close(fd);
          break;
       }
-
+      // Invertir la cadena
       reverse_string(readbuf);
+      // Enviar la cadena invertida de vuelta al cliente
       printf("FIFOSERVER: Sending Reversed String: \"%s\" and length is %d\n", readbuf, (int) strlen(readbuf));
       write(fd, readbuf, strlen(readbuf));
 
-      /* Espera breve para permitir que el otro proceso lea antes de continuar */
+      // Espera breve para permitir que el otro proceso lea antes de continuar 
       sleep(2);
    }
 
