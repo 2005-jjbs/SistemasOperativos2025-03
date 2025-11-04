@@ -32,11 +32,11 @@ pthread_cond_t condiCC = PTHREAD_COND_INITIALIZER;
 // Función REPORTAR
 void *reportar(void *nousada) {
 
-    pthread_mutex_lock(&bloqueoCC);
+    //pthread_mutex_lock(&bloqueoCC);
     // Espera a ser notificado por el hilo que asigna el valor
-    while(!notificar){
-        pthread_cond_wait(&condiCC, &bloqueoCC);
-    }
+    //while(!notificar){
+    //    pthread_cond_wait(&condiCC, &bloqueoCC);
+    //}
 
     // Imprime el valor asignado por el otro hilo
     printf("\n\tEl valor es: %d\n", valor);
