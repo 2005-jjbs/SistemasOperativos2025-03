@@ -28,6 +28,7 @@ Se descargan todos los ficheros en una carpeta (los .c, .txt y el Makefile )y me
 - make lab01
 - make lab02
 - make lab03
+
 Este corre los codigos y genera el ejecutable. Para ejecutarlos y ver su resultado se usan los siguientes comandos
 - ./lab01
 - ./lab02
