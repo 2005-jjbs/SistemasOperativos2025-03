@@ -24,7 +24,7 @@ En concreto, este repositorio incluye varios ejercicios:
 ---
 
 ## Ejecucion 
-Se descargan todos los ficheros en una carpeta (los .c, .txt y el Makefile )y mediante el comando
+Se descargan todos los ficheros en una carpeta (los .c, .txt y el Makefile ) y los siguientes comandos se ejecutan por terminal de comandos
 - make lab01
 - make lab02
 - make lab03
@@ -33,3 +33,6 @@ Este corre los codigos y genera el ejecutable. Para ejecutarlos y ver su resulta
 - ./lab01
 - ./lab02
 - ./lab03
+
+Para eliminar los ejecutables se hace uso del comando.
+- make clean
