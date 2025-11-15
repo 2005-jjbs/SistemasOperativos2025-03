@@ -30,3 +30,34 @@ Este taller implementa mecanismos de sincronización y comunicación entre **pro
 ### 🔹 Compilar todos los programas
 ```bash
 make
+# 🚀 Actividad 1: Productor–Consumidor entre Procesos
+
+### ▶️ Ejecución  
+En **dos terminales diferentes**:
+
+#### Terminal 1 – Productor
+```bash
+./producer
+./consumer
+
+
+###Segunda parte
+Crear archivo con números
+2
+4
+5
+7
+8
+9
+
+
+./concurrenciaPosix datos.txt 4
+
+
+###Tercera parte
+
+./posixSincro
+
+
+Limpieza
+make clean
