@@ -9,4 +9,11 @@ Este taller implementa mecanismos de sincronización y comunicación entre proce
 - Aplicar mutex y variables de condición para garantizar exclusión mutua y coordinación entre hilos
 - Analizar las diferencias entre sincronización de procesos e hilos
 
-## 🏗️ Estructura del Proyecto
+##👥 Autores
+Juan José Ballesteros Suarez
+
+Juan Diego Rojas Osorio
+
+##🎓 Curso
+Sistemas Operativos - Pontificia Universidad Javeriana
+Profesor: John Corredor, PhD.
