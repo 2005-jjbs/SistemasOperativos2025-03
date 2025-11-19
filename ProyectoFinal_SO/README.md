@@ -68,8 +68,11 @@ Solo un hilo puede modificar estas estructuras al mismo tiempo.
 Para probar este proyecto se requiere usar un archivo de texto, el cual sera leido por el agente. El archivo cuenta con la siguiente estructura:
 
 Lopez,8,10
+
 Martinez,8,12
+
 Torres,9,4
+
 Garcia,7,6
 
 ---
