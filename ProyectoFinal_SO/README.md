@@ -11,7 +11,11 @@ Este proyecto implementa un sistema de gestión de reservas para un parque recre
 Incluye un **reloj interno** que avanza la hora del parque, libera recursos y genera eventos sin bloquear la comunicación externa, además de mecanismos de sincronización para evitar condiciones de carrera.
 
 ---
+##  Documentación del Proyecto
 
+La documentación del proyecto se encuentra en la carpeta docs_Proyecto, en la cual se encuentra el enunciado entregado y el informe realizado en el cual se pueden ver objetivos, desarrollo del proyecto, pruebas y resultados, analisis y conclusiones
+
+---
 ## 🧩 Arquitectura del Sistema
 
 El sistema se compone de tres módulos principales:
