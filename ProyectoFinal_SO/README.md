@@ -13,7 +13,11 @@ Incluye un **reloj interno** que avanza la hora del parque, libera recursos y ge
 ---
 ##  Documentación del Proyecto
 
-La documentación del proyecto se encuentra en la carpeta docs_Proyecto, en la cual se encuentra el enunciado entregado y el informe realizado en el cual se pueden ver objetivos, desarrollo del proyecto, pruebas y resultados, analisis y conclusiones
+La documentación completa del proyecto se encuentra disponible en la carpeta docs_Proyecto. Este repositorio incluye tanto el enunciado original como el informe final, donde se detallan los objetivos, el desarrollo, las pruebas realizadas, los resultados obtenidos, el análisis y las conclusiones del trabajo.
+
+Consulta la carpeta [`/docs_Proyecto`](./docs_Proyecto/) para acceder a:
+- 📝 Enunciado del proyecto
+- 📊 Informe completo (objetivos, desarrollo, pruebas, resultados y conclusiones)
 
 ---
 ## 🧩 Arquitectura del Sistema
